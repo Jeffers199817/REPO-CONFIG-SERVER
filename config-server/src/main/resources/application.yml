@@ -4,3 +4,12 @@ server:
 spring:
   aplication:
     name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Jeffers199817/REPO-CONFIG-SERVER.git
+          searchPaths: config-data
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
